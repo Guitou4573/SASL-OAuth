@@ -38,7 +38,7 @@ BOOL APIENTRY DllMain( HANDLE hModule,
                        LPVOID lpReserved
 					 )
 {
-  printf("debug: %s %ds
+  printf("debug: %s %ds");
      switch (ul_reason_for_call)
 	{
 		case DLL_PROCESS_ATTACH:
