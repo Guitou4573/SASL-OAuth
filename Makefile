@@ -72,7 +72,7 @@
 
 
 srcdir = .
-srcdir = ..
+#srcdir = ..
 
 pkgdatadir = $(datadir)/cyrus-sasl
 pkglibdir = $(libdir)/cyrus-sasl
@@ -93,13 +93,13 @@ NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
 host_triplet = i686-pc-linux-gnu
-ACLOCAL = ${SHELL} /homes/wmills/sasl/cyrus-sasl-2.1.23/config/missing --run aclocal-1.7 -I $(top_srcdir)/cmulocal -I $(top_srcdir)/config
+ACLOCAL = ${SHELL} ../cyrus-sasl-2.1.26/config/missing --run aclocal-1.7 -I $(top_srcdir)/cmulocal -I $(top_srcdir)/config
 AMDEP_FALSE = #
 AMDEP_TRUE = 
-AMTAR = ${SHELL} /homes/wmills/sasl/cyrus-sasl-2.1.23/config/missing --run tar
-AUTOCONF = ${SHELL} /homes/wmills/sasl/cyrus-sasl-2.1.23/config/missing --run autoconf
-AUTOHEADER = ${SHELL} /homes/wmills/sasl/cyrus-sasl-2.1.23/config/missing --run autoheader
-AUTOMAKE = ${SHELL} /homes/wmills/sasl/cyrus-sasl-2.1.23/config/missing --run automake-1.7
+AMTAR = ${SHELL} ../cyrus-sasl-2.1.26/config/missing --run tar
+AUTOCONF = ${SHELL} ../cyrus-sasl-2.1.26/config/missing --run autoconf
+AUTOHEADER = ${SHELL} ../cyrus-sasl-2.1.26/config/missing --run autoheader
+AUTOMAKE = ${SHELL} ../cyrus-sasl-2.1.26/config/missing --run automake-1.7
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -154,7 +154,7 @@ LTLIBOBJS =
 LTSNPRINTFOBJS = 
 MACOSX_FALSE = 
 MACOSX_TRUE = #
-MAKEINFO = ${SHELL} /homes/wmills/sasl/cyrus-sasl-2.1.23/config/missing --run makeinfo
+MAKEINFO = ${SHELL} ../cyrus-sasl-2.1.26/config/missing --run makeinfo
 NM = /usr/bin/nm -B
 NO_SASL_DB_MANS_FALSE = 
 NO_SASL_DB_MANS_TRUE = #
@@ -191,7 +191,7 @@ SASL_KRB_LIB =
 SASL_MECHS =  libsasldb.la libcrammd5.la libdigestmd5.la libotp.la libgssapiv2.la libplain.la liboauth.la libanonymous.la liboauth_validate.la liboauth_new.la
 SASL_STATIC_LIBS = 
 SASL_STATIC_OBJS =  gssapi.o
-SASL_STATIC_SRCS =  ../plugins/gssapi.c
+SASL_STATIC_SRCS =  ../cyrus-sasl-2.1.26/plugins/gssapi.c
 SASL_UTIL_HEADERS_EXTRA = 
 SASL_UTIL_LIBS_EXTRA = 
 SET_MAKE = 
@@ -227,7 +227,7 @@ host_os = linux-gnu
 host_vendor = pc
 includedir = ${prefix}/include
 infodir = ${prefix}/info
-install_sh = /homes/wmills/sasl/cyrus-sasl-2.1.23/config/install-sh
+install_sh = ../cyrus-sasl-2.1.26/config/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localstatedir = ${prefix}/var
