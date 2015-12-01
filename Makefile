@@ -296,9 +296,9 @@ init_src = oauth_init.c oauth_validate_init.c oauth_new.c
 #CLEANFILES = $(init_src)
 CLEANFILES = 
 subdir = plugins
-ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-mkinstalldirs = $(SHELL) $(top_srcdir)/config/mkinstalldirs
-CONFIG_HEADER = $(top_builddir)/config.h
+ACLOCAL_M4 = ../cyrus-sasl-2.1.26/aclocal.m4
+mkinstalldirs = $(SHELL) ../cyrus-sasl-2.1.26/config/mkinstalldirs
+CONFIG_HEADER = ./config.h
 CONFIG_CLEAN_FILES =
 LTLIBRARIES = $(sasl_LTLIBRARIES)
 
@@ -315,7 +315,7 @@ SCRIPTS = $(noinst_SCRIPTS)
 
 
 DEFAULT_INCLUDES =  -I. -I$(srcdir) -I$(top_builddir)
-depcomp = $(SHELL) $(top_srcdir)/config/depcomp
+depcomp = $(SHELL) ../cyrus-sasl-2.1.26/config/depcomp
 am__depfiles_maybe = depfiles
 DEP_FILES = 	./$(DEPDIR)/oauth.Plo ./$(DEPDIR)/oauth_init.Plo \
 	./$(DEPDIR)/oauth_new.Plo ./$(DEPDIR)/oauth_new_init.Plo \
